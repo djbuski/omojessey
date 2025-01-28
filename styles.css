@@ -42,32 +42,34 @@ body {
   position: relative;
   z-index: 2;
   animation: fadeIn 2s ease-in-out;
+  padding: 0 1rem; /* Added padding for mobile */
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 2.5rem; /* Smaller font size for mobile */
   margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller font size for mobile */
   margin-bottom: 2rem;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 1rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem 2rem; /* Smaller padding for mobile */
   background: linear-gradient(90deg, #00b4d8, #0096c7);
   color: #fff;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Smaller font size for mobile */
   font-weight: bold;
   transition: all 0.4s ease;
   text-decoration: none;
   box-shadow: 0 8px 20px rgba(0, 180, 216, 0.6);
-
 }
 
 .cta-button:hover {
@@ -78,15 +80,15 @@ body {
 
 /* Services Section */
 #services {
-  padding: 5rem 2rem;
+  padding: 3rem 1rem; /* Adjusted padding for mobile */
   text-align: center;
   background: #0d1117;
 }
 
 #services h2 {
-  font-size: 3rem;
+  font-size: 2rem; /* Smaller font size for mobile */
   color: #00b4d8;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Adjusted margin for mobile */
   text-transform: uppercase;
   letter-spacing: 1.5px;
   position: relative;
@@ -94,7 +96,7 @@ body {
 
 #services h2::after {
   content: '';
-  width: 100px;
+  width: 80px; /* Smaller width for mobile */
   height: 3px;
   background: #00b4d8;
   display: block;
@@ -103,15 +105,15 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+  gap: 1.5rem; /* Smaller gap for mobile */
+  padding: 0 1rem; /* Added padding for mobile */
 }
 
 .service-card {
   background: linear-gradient(135deg, #1e293b, #2a2e35);
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1.5rem; /* Smaller padding for mobile */
   transition: all 0.4s ease;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
@@ -122,21 +124,27 @@ body {
   box-shadow: 0 12px 30px rgba(0, 180, 216, 0.5);
 }
 
+.service-card i {
+  font-size: 2.5rem; /* Smaller icon size for mobile */
+  color: #00b4d8;
+  margin-bottom: 1rem;
+}
+
 .service-card h3 {
   color: #00b4d8;
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Smaller font size for mobile */
   margin-bottom: 1rem;
 }
 
 .service-card p {
   color: #e5e5e5;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller font size for mobile */
   line-height: 1.5;
 }
 
 /* Meet the CEO Section */
 #about-ceo {
-  padding: 5rem 2rem;
+  padding: 3rem 1rem; /* Adjusted padding for mobile */
   background: linear-gradient(135deg, #1e293b, #0d1117);
   color: #fff;
   text-align: center;
@@ -146,18 +154,18 @@ body {
 #about-ceo::before {
   content: '';
   position: absolute;
-  top: -80px;
+  top: -60px; /* Adjusted for mobile */
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 60px; /* Adjusted for mobile */
   background: linear-gradient(135deg, #0d1117, #1e293b);
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
 #about-ceo h2 {
-  font-size: 3rem;
+  font-size: 2rem; /* Smaller font size for mobile */
   color: #00b4d8;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Adjusted margin for mobile */
   text-transform: uppercase;
   position: relative;
 }
@@ -166,13 +174,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  justify-content: center; /* Centered for mobile */
+  gap: 2rem; /* Smaller gap for mobile */
 }
 
 .bio-image img {
-  width: 350px;
-  height: 350px;
+  width: 250px; /* Smaller image size for mobile */
+  height: 250px; /* Smaller image size for mobile */
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #00b4d8;
@@ -180,26 +188,26 @@ body {
 }
 
 .bio-text {
-  max-width: 600px;
-  text-align: left;
+  max-width: 100%; /* Full width for mobile */
+  text-align: center; /* Centered text for mobile */
   animation: fadeInUp 1.5s ease;
 }
 
 .bio-text h3 {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Smaller font size for mobile */
   color: #00b4d8;
   margin-bottom: 1rem;
 }
 
 .bio-text p {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Smaller font size for mobile */
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #d1d5db;
 }
 
 .bio-text blockquote {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller font size for mobile */
   font-style: italic;
   color: #00b4d8;
   border-left: 5px solid #00b4d8;
@@ -208,20 +216,20 @@ body {
 
 /* Contact Section */
 #contact {
-  padding: 4rem 2rem;
+  padding: 3rem 1rem; /* Adjusted padding for mobile */
   text-align: center;
   background: #1e293b;
 }
 
 #contact h2 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Smaller font size for mobile */
   color: #00b4d8;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Adjusted margin for mobile */
 }
 
 .contact-info {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
+  margin-bottom: 1.5rem; /* Adjusted margin for mobile */
+  font-size: 1rem; /* Smaller font size for mobile */
   color: #e5e5e5;
 }
 
@@ -237,30 +245,119 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem; /* Adjusted padding for mobile */
   background: #0d1117;
   color: #fff;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Smaller gap for mobile */
+}
+
+.social-links a {
+  color: #00b4d8;
+  font-size: 1.2rem; /* Smaller icon size for mobile */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b6;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 4rem; /* Larger font size for tablets and desktops */
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero-content p {
+    font-size: 1.5rem; /* Larger font size for tablets and desktops */
+  }
+
+  .cta-button {
+    padding: 1rem 2.5rem; /* Larger padding for tablets and desktops */
+    font-size: 1.2rem; /* Larger font size for tablets and desktops */
+  }
+
+  #services {
+    padding: 5rem 2rem; /* Larger padding for tablets and desktops */
+  }
+
+  #services h2 {
+    font-size: 3rem; /* Larger font size for tablets and desktops */
+  }
+
+  .service-card {
+    padding: 2rem; /* Larger padding for tablets and desktops */
+  }
+
+  .service-card i {
+    font-size: 3rem; /* Larger icon size for tablets and desktops */
+  }
+
+  .service-card h3 {
+    font-size: 1.8rem; /* Larger font size for tablets and desktops */
+  }
+
+  .service-card p {
+    font-size: 1rem; /* Larger font size for tablets and desktops */
+  }
+
+  #about-ceo {
+    padding: 5rem 2rem; /* Larger padding for tablets and desktops */
+  }
+
+  #about-ceo h2 {
+    font-size: 3rem; /* Larger font size for tablets and desktops */
+  }
+
+  .bio-image img {
+    width: 350px; /* Larger image size for tablets and desktops */
+    height: 350px; /* Larger image size for tablets and desktops */
+  }
+
+  .bio-text {
+    max-width: 600px; /* Adjusted width for tablets and desktops */
+    text-align: left; /* Left-aligned text for tablets and desktops */
+  }
+
+  .bio-text h3 {
+    font-size: 2rem; /* Larger font size for tablets and desktops */
+  }
+
+  .bio-text p {
+    font-size: 1.2rem; /* Larger font size for tablets and desktops */
+  }
+
+  .bio-text blockquote {
+    font-size: 1.5rem; /* Larger font size for tablets and desktops */
+  }
+
+  #contact {
+    padding: 4rem 2rem; /* Larger padding for tablets and desktops */
+  }
+
+  #contact h2 {
+    font-size: 2.5rem; /* Larger font size for tablets and desktops */
+  }
+
+  .contact-info {
+    font-size: 1.2rem; /* Larger font size for tablets and desktops */
+  }
+
+  footer {
+    padding: 2rem; /* Larger padding for tablets and desktops */
+  }
+
+  .social-links a {
+    font-size: 1.5rem; /* Larger icon size for tablets and desktops */
   }
 }
